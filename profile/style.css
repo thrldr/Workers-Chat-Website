@@ -16,3 +16,11 @@
     position: relative;
     border: 3px solid green;
   }
+
+.flex-fill {
+  flex:1;
+}
+
+.profile {
+  font-size: 20px;
+}

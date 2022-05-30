@@ -13,11 +13,10 @@ $(document).ready(function(){
     $("#forgot-password").click(function(){
         $("#signup").hide();
         $("#submit").text("Change password");
-        $("#please").text("Enter new password");
-        $("label#password").text("New password");
+        $("#submit").addClass("mt-3");
+        $("#please").text("Please enter your email");
+        $("div#password").hide();
         $("#forgot-password").hide();
-        $("#email").hide();
-        $("div.passwordConfirmation").show();
     })
 
     $("form").submit(function(event){
@@ -33,6 +32,7 @@ $(document).ready(function(){
     })
     $("input#password").change(function(){
         renderPasswordValidation();
+        renderConfirmPasswordValidation();
     })
     $("input#passwordConfirmation").change(function(){
         renderConfirmPasswordValidation();
