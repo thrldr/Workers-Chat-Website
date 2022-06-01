@@ -1,290 +1,79 @@
+<!DOCTYPE html>
 <html>
 <head>
-
-<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
-<link href="bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+	<script src="message-rendering.js"></script>
+	<script src="message-requests.js"></script>
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
-	<section style="background-color: #CDC4F9;">
-  <div class="container py-5">
-
-    <div class="row">
-      <div class="col-md-12">
-
-        <div class="card" id="chat3" style="border-radius: 15px;">
-          <div class="card-body">
-
-            <div class="row">
-              <div class="col-md-6 col-lg-5 col-xl-4 mb-4 mb-md-0">
-
-                <div class="p-3">
-
-                  <div class="input-group rounded mb-3">
-                    <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search"
-                      aria-describedby="search-addon" />
-                    <span class="input-group-text border-0" id="search-addon">
-                      <i class="fas fa-search"></i>
-                    </span>
-                  </div>
-
-                  <div data-mdb-perfect-scrollbar="true" style="position: relative; height: 400px">
-                    <ul class="list-unstyled mb-0">
-                      <li class="p-2 border-bottom">
-                        <a href="#!" class="d-flex justify-content-between">
-                          <div class="d-flex flex-row">
-                            <div>
-                              <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                                alt="avatar" class="d-flex align-self-center me-3" width="60">
-                              <span class="badge bg-success badge-dot"></span>
-                            </div>
-                            <div class="pt-1">
-                              <p class="fw-bold mb-0">Marie Horwitz</p>
-                              <p class="small text-muted">Hello, Are you there?</p>
-                            </div>
-                          </div>
-                          <div class="pt-1">
-                            <p class="small text-muted mb-1">Just now</p>
-                            <span class="badge bg-danger rounded-pill float-end">3</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="p-2 border-bottom">
-                        <a href="#!" class="d-flex justify-content-between">
-                          <div class="d-flex flex-row">
-                            <div>
-                              <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
-                                alt="avatar" class="d-flex align-self-center me-3" width="60">
-                              <span class="badge bg-warning badge-dot"></span>
-                            </div>
-                            <div class="pt-1">
-                              <p class="fw-bold mb-0">Alexa Chung</p>
-                              <p class="small text-muted">Lorem ipsum dolor sit.</p>
-                            </div>
-                          </div>
-                          <div class="pt-1">
-                            <p class="small text-muted mb-1">5 mins ago</p>
-                            <span class="badge bg-danger rounded-pill float-end">2</span>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="p-2 border-bottom">
-                        <a href="#!" class="d-flex justify-content-between">
-                          <div class="d-flex flex-row">
-                            <div>
-                              <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                                alt="avatar" class="d-flex align-self-center me-3" width="60">
-                              <span class="badge bg-success badge-dot"></span>
-                            </div>
-                            <div class="pt-1">
-                              <p class="fw-bold mb-0">Danny McChain</p>
-                              <p class="small text-muted">Lorem ipsum dolor sit.</p>
-                            </div>
-                          </div>
-                          <div class="pt-1">
-                            <p class="small text-muted mb-1">Yesterday</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="p-2 border-bottom">
-                        <a href="#!" class="d-flex justify-content-between">
-                          <div class="d-flex flex-row">
-                            <div>
-                              <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava4-bg.webp"
-                                alt="avatar" class="d-flex align-self-center me-3" width="60">
-                              <span class="badge bg-danger badge-dot"></span>
-                            </div>
-                            <div class="pt-1">
-                              <p class="fw-bold mb-0">Ashley Olsen</p>
-                              <p class="small text-muted">Lorem ipsum dolor sit.</p>
-                            </div>
-                          </div>
-                          <div class="pt-1">
-                            <p class="small text-muted mb-1">Yesterday</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="p-2 border-bottom">
-                        <a href="#!" class="d-flex justify-content-between">
-                          <div class="d-flex flex-row">
-                            <div>
-                              <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
-                                alt="avatar" class="d-flex align-self-center me-3" width="60">
-                              <span class="badge bg-warning badge-dot"></span>
-                            </div>
-                            <div class="pt-1">
-                              <p class="fw-bold mb-0">Kate Moss</p>
-                              <p class="small text-muted">Lorem ipsum dolor sit.</p>
-                            </div>
-                          </div>
-                          <div class="pt-1">
-                            <p class="small text-muted mb-1">Yesterday</p>
-                          </div>
-                        </a>
-                      </li>
-                      <li class="p-2">
-                        <a href="#!" class="d-flex justify-content-between">
-                          <div class="d-flex flex-row">
-                            <div>
-                              <img
-                                src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
-                                alt="avatar" class="d-flex align-self-center me-3" width="60">
-                              <span class="badge bg-success badge-dot"></span>
-                            </div>
-                            <div class="pt-1">
-                              <p class="fw-bold mb-0">Ben Smith</p>
-                              <p class="small text-muted">Lorem ipsum dolor sit.</p>
-                            </div>
-                          </div>
-                          <div class="pt-1">
-                            <p class="small text-muted mb-1">Yesterday</p>
-                          </div>
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="col-md-6 col-lg-7 col-xl-8">
-
-                <div class="pt-3 pe-3" data-mdb-perfect-scrollbar="true"
-                  style="position: relative; height: 400px">
-
-                  <div class="d-flex flex-row justify-content-start">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
-                      alt="avatar 1" style="width: 45px; height: 100%;">
-                    <div>
-                      <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Lorem ipsum
-                        dolor
-                        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                        dolore
-                        magna aliqua.</p>
-                      <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:00 PM | Aug 13</p>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row justify-content-end">
-                    <div>
-                      <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Ut enim ad minim veniam,
-                        quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                      <p class="small me-3 mb-3 rounded-3 text-muted">12:00 PM | Aug 13</p>
-                    </div>
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                      alt="avatar 1" style="width: 45px; height: 100%;">
-                  </div>
-
-                  <div class="d-flex flex-row justify-content-start">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
-                      alt="avatar 1" style="width: 45px; height: 100%;">
-                    <div>
-                      <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Duis aute
-                        irure
-                        dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                      </p>
-                      <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:00 PM | Aug 13</p>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row justify-content-end">
-                    <div>
-                      <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Excepteur sint occaecat
-                        cupidatat
-                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                      <p class="small me-3 mb-3 rounded-3 text-muted">12:00 PM | Aug 13</p>
-                    </div>
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                      alt="avatar 1" style="width: 45px; height: 100%;">
-                  </div>
-
-                  <div class="d-flex flex-row justify-content-start">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
-                      alt="avatar 1" style="width: 45px; height: 100%;">
-                    <div>
-                      <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Sed ut
-                        perspiciatis
-                        unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
-                        rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae
-                        dicta
-                        sunt explicabo.</p>
-                      <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:00 PM | Aug 13</p>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row justify-content-end">
-                    <div>
-                      <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Nemo enim ipsam
-                        voluptatem quia
-                        voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
-                        qui
-                        ratione voluptatem sequi nesciunt.</p>
-                      <p class="small me-3 mb-3 rounded-3 text-muted">12:00 PM | Aug 13</p>
-                    </div>
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                      alt="avatar 1" style="width: 45px; height: 100%;">
-                  </div>
-
-                  <div class="d-flex flex-row justify-content-start">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
-                      alt="avatar 1" style="width: 45px; height: 100%;">
-                    <div>
-                      <p class="small p-2 ms-3 mb-1 rounded-3" style="background-color: #f5f6f7;">Neque porro
-                        quisquam
-                        est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
-                        numquam
-                        eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-                      <p class="small ms-3 mb-3 rounded-3 text-muted float-end">12:00 PM | Aug 13</p>
-                    </div>
-                  </div>
-
-                  <div class="d-flex flex-row justify-content-end">
-                    <div>
-                      <p class="small p-2 me-3 mb-1 text-white rounded-3 bg-primary">Ut enim ad minima veniam,
-                        quis
-                        nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
-                        commodi
-                        consequatur?</p>
-                      <p class="small me-3 mb-3 rounded-3 text-muted">12:00 PM | Aug 13</p>
-                    </div>
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
-                      alt="avatar 1" style="width: 45px; height: 100%;">
-                  </div>
-
-                </div>
-
-                <div class="text-muted d-flex justify-content-start align-items-center pe-3 pt-3 mt-2">
-                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
-                    alt="avatar 3" style="width: 40px; height: 100%;">
-                  <input type="text" class="form-control form-control-lg" id="exampleFormControlInput2"
-                    placeholder="Type message">
-                  <a class="ms-1 text-muted" href="#!"><i class="fas fa-paperclip"></i></a>
-                  <a class="ms-3 text-muted" href="#!"><i class="fas fa-smile"></i></a>
-                  <a class="ms-3" href="#!"><i class="fas fa-paper-plane"></i></a>
-                </div>
-
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
+	<div class="container-fluid" style="background-color: rgb(255, 255, 255);">
+      <header class="d-flex flex-wrap py-3 mb-4 border-bottom">
+        <a href="index.html" class="d-flexalign-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+			<span class="fs-4 px-5"><b>Workers</b></span>
+        </a>
+  
+        <ul class="nav nav-pills px-5">
+          <li class="nav-item"><a href="../profile/index.html" class="nav-link">Profile</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Workers</a></li>
+          <li class="nav-item"><a href="#" class="nav-link active">Messages</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Dashboard</a></li>
+          <li class="nav-item"><a href="../login/index.html" class="nav-link">Log out</a></li>
+        </ul>
+      </header>
     </div>
 
-  </div>
-</section>
+	<div class="container-fluid px-4" >
+		<div class="row">
+			<!-- chats list -->
+			<div class="col-sm-3 card">
+				<div>
+					<h1>chats list</h1>
+				</div>
+			</div>
 
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+			<!-- current chat -->
+
+			<div class="col-sm-9">
+				<div class="card">
+					<div class="container-fluid py-2 align-items-center card">
+						<a href="../profile/index.html">
+							<span class="fs-1 align-middle">
+								<img src="guy1.jpg" alt="Avatar" class="img-fluid">
+								<b>Ivan Ivanych</b>
+							</span>
+						</a>
+					</div>
+					<div class="card-body">
+					
+						<div class="overflow-auto" id="chat" style="height: 40em;">		
+							<div id="chat-start" style="display: none;"></div>
+								<!-- messages go here -->
+							<div id="chat-end" style="display: none;"></div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-body">
+							<input type="text" style="width:89%" placeholder="Enter message">
+							<button style="width:10%">SEND</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+	
 </body>
 </html>

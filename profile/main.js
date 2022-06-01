@@ -23,5 +23,5 @@ $(document).ready(function(){
     $("#position").text(data.position);
     $("#skype").text(data.skype);
     $("#profile-picture").attr("src", data.profilePicture);
-    
+	$("body").show();
 })
