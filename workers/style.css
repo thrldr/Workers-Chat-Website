@@ -1,0 +1,13 @@
+.profile-picture {
+    height: 5rem;
+    width: 5rem;
+}
+
+.worker {
+    height: 5rem; 
+    padding-left:0;
+}
+
+body {
+    background-color: #eee;
+}
